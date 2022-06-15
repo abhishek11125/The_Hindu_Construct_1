@@ -8,8 +8,8 @@
 /* navbar of above Logo */
 
 #page {
-  height: 500px;
-  width: 1000px;
+  /* height: 500px; */
+  width: 80%;
   margin: 15px auto;
 }
 #nav1 {
@@ -62,7 +62,7 @@
 #logo {
   margin: 15px 0;
 }
-#logo > img {
+#logo>a > img {
   display: block;
   margin: auto;
 }
@@ -179,7 +179,7 @@
   font-size: 10px;
   display: flex;
   justify-content: space-between;
-  margin:5px 0;
+  margin:5px 0px;
 }
 #header p{
   color:red
