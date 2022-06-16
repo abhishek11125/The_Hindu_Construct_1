@@ -317,8 +317,7 @@
   width: 970px;
   height: 250px;
   margin: auto;
-  margin-top: 480px;
-
+  margin-top: 430px;
 
 }
 .section{
@@ -350,7 +349,7 @@
 .section>div>p:hover{
     text-decoration: underline;
 }
-#submain{
+.submain{
   width: 1000px;
   margin-top: 40px;
   display: flex;
@@ -402,6 +401,7 @@
 .faults{
     width: 300px;
     height: 350px;
+    margin: 10px;
 }
 .faults>div:first-child{
     position:relative;
@@ -461,4 +461,52 @@
 .faults>div:last-child>img{
   margin-top: 50px;
 }
+.cricket{
+  width: 680px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(auto);
+  gap: 20px;
+  font-family: sans-serif;
+  line-height: 20px;
+}
+.cricket>div{
+  padding: 8px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.cricket>div+p{
+  padding: 5px;
+}
+.cricket>div>img+p{
+  font-size: 12px;
+  color: #326e00;
+  font-weight: 600;
+}
+.cricket>div>img+p+p{
+  font-size: 16px;
+}
+.cricket>div>img+p+p+p{
+  font-size: 11px;
+  color: #828282;
+  font-weight: 600;
+  text-align: left;
+}
+.cricket>div>img+p+p+p+p{
+  color: #282828;
+  font-size: 14px;
+}
 
+.other>div{
+  width: 100%;
+  height: 25%;
+  border-bottom-style: dashed;
+
+}
+.other>div>p:first-child{
+  font-size: 12px;
+  color: #326e00;
+  font-weight: 600;
+}
+.other>div>p:last-child{
+  font-size: 12px;
+}
