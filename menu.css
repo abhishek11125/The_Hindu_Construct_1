@@ -2,10 +2,10 @@
     background-color: #2a5e88;
 }
 
-#start:hover{
+#startClose:hover{
     text-decoration:underline
 }
-#end{
+#endClose{
     
         text-align: center;
         margin-top: 10px;
@@ -13,7 +13,7 @@
         padding: 10px;
         
 }
-#end:hover{
+#endClose:hover{
     text-decoration: underline;
 }
 #one{
