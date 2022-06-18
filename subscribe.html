@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        img{
+            margin: 20px auto;
+            display: block;
+            width: 50%;
+        }
+        p{
+            text-align: center;
+        }#container{
+            width: 1200px;
+            margin: auto;
+            display: flex;
+            border: 1px solid transparent;
+
+        }#container>div{
+            border: 1px solid green;
+            width: 32%;
+            margin: auto;
+            border-radius: 5px;
+        }button{
+            display: block;
+            width: 90%;
+            background-color: rgb(53, 53, 110);
+            color: white;
+            margin: auto;
+            padding: 10px;
+            border-radius:4px ;
+            margin-bottom: 5px;
+            border: none;
+        }#button{
+            background-color: rgb(244, 217, 16);
+            color: black;
+            font-weight: bold;
+            border: none;
+        }#container>div:nth-child(2){
+            background-color: rgb(99, 99, 158);
+            color: aliceblue;
+        }#box{
+            display: flex;
+            width: 1200px;
+            margin: auto;
+            border: 1px solid transparent;
+            padding: 3px;
+        }
+        #box>div{
+            width:18%;
+            margin: auto;
+            border: 1px solid transparent;
+        }#box>div>img{
+            width: 20%;
+            margin-bottom: -10px;
+        }
+        @media all  and (min-width:320px) and (max-width:479px){
+          #container{
+              display: block;
+              width: 100%;
+             
+          }
+          #box{
+              display: block;
+              width: 100%;
+
+          }#box>div{
+              width: 100%;
+          }
+          #container>div{
+              width: 100%;
+          }
+        }
+        @media all  and (min-width:480px) and (max-width:720px){
+          #container{
+              
+              width: 90%;
+          }
+          #box{
+             width: 100%;
+          }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://www.thehindu.com/static/content/images/20210222131602/assets/Logo.png" alt="">
+    <p>Join the thousands of informed citizens who rely on unlimited access to credible quality news online every single day.</p>
+    <div id="container">
+     
+     <div>
+         <p>Readers choice pack 1-year</p>
+         <p>₹ 1399</p>
+        <p class="small">
+            <span class="weight-600">Unlimited access to:</span><br />
+             <small>✔ TheHindu.com on Desktop & Mobile<br>✔ Digital replica of Print via e-Paper<br>✔ Mobile Apps on Android & iOS<br>✔ Digital Exclusive Content<br>✔ Crossword on the Web</small>
+          </p>
+          <button id="one" >SUBSCRIBE</button>
+     </div>
+     <div>
+        <p>Exclusive Combo Pack - 1 Year</p>
+        <p>₹ 1599</p>
+        <p class="small">
+            <span class="weight-600">Unlimited access to:</span><br />
+             <small>✔ TheHindu.com on Desktop & Mobile<br>✔ Digital replica of Print via e-Paper<br>✔ Frontline Digital Access<br>✔ Mobile Apps on Android & iOS<br>✔ Digital Exclusive Content<br>✔ Crossword on the Web</small>
+          </p>
+          <button id="button">SUBSCRIBE</button>
+  
+     </div>
+     <div>
+         <p>The Hindu group all access pass -1 Year</p>
+         <p>₹ 2399</p>
+        <p class="small">
+            <span class="weight-600">Unlimited access to:</span><br />
+             <small>✔ The Hindu Digital Access on the Web, Apps & e-Paper<br>✔ BusinessLine Digital Access on the Web, Apps & e-Paper<br>✔ Frontline on the Web<br>✔ Sportstar on the Web<br>✔ Crossword on the Web </small>
+          </p>
+          <button id="two">SUBSCRIBE</button>
+  
+     </div>
+
+    </div>
+    <h3 style="text-align: center;margin-bottom:-10px;margin-top: 20px;">Subscription benifits</h3>
+    <div id="box">
+        <div>
+            <img src="https://www.thehindu.com/static/content/images/20210125110322/assets/cil_infinity.png" >
+            <p>Unlimited Access</p>
+            <p>Via the website (desktop and mobile )or the mobile apps (ios and Android)</p>
+        </div>
+        <div>
+            <img src="https://www.thehindu.com/static/content/images/20210125110322/assets/cil_spreadsheet.png" >
+            <p>Minimal Ads</p>
+            <p>A clean and clutter-free reading experience</p>
+        </div>
+        <div>
+            <img src="https://www.thehindu.com/static/content/images/20210125110322/assets/cil_newspaper.png" >
+            <p>Today's paper
+            </p>
+            <p>All stories that featured in the daily, in a distraction-free space</p>
+        </div>
+        <div>
+            <img src="https://www.thehindu.com/static/content/images/20210125110322/assets/cil_basket.png" >
+            <p>Curated content</p>
+            <p>three news briefings a day, handpicked by our editorial team</p>
+        </div>
+        <div>
+            <img src="https://www.thehindu.com/static/content/images/20210125110322/assets/la_crown.png" >
+            <p>Premium articles</p>
+            <p>Exclusive access to subscriber-only articles</p>
+        </div>
+       
+    </div>
+
+
+    
+
+        <h1 class="faq-heading">FAQ'S</h1>
+        <section class="faq-container">
+            <div class="faq-one">
+
+                <!-- faq question -->
+                <h1 class="faq-page">What is The Hindu Digital Access?</h1>
+
+                <!-- faq answer -->
+                <div class="faq-body">
+                    <p>The Hindu Digital access is the subscription to get unlimited access to all content available on TheHindu.com on the Web , on desktop and mobile and via Mobile apps available on play store and App Store. This subscription unlocks access to premium features such as personalised article recommendations, quick briefings on the day's news, access to premium articles that are exclusive to subscribers, and more. Please note: The Hindu current digital subscription packages do not cover+ or the e-Paper of The Hindu. </p>
+                </div>
+            </div>
+            <hr class="hr-line">
+
+            <div class="faq-two">
+
+                <!-- faq question -->
+                <h1 class="faq-page">Is e-Paper a part of my Digital Subscription?</h1>
+
+                <!-- faq answer -->
+
+                <div class="faq-body">
+                    <p>e-Paper is available with our Readers Choice Combo plan, Exclusive 
+                        Combo Pack, and All-Access Pass plan. If you are looking for the hindu e-Paper standalone pack, please feel free to subscribe to our plans here. </p>
+                </div>
+            </div>
+            <hr class="hr-line">
+
+
+            <div class="faq-three">
+
+                <!-- faq question -->
+<h1 class="faq-page">Can I upgrade my plan? what happens to my balance amount and duration?</h1>
+
+                <!-- faq answer -->
+                <div class="faq-body">
+                    <p>Yes! You may upgrade your plan to a higher duration plan anytime. You can even move to a recurring plan if you like.
+                         You can even upgrade to the "All-in-One and All-Access Plan"
+                         which unlocks unlimited access to all the publications of The Hindu group - 
+                         the Hindu BusinessLine ,Frontline, Sportstar, Crossword Plus and the e-papers of The Hindu and Businessline. 
+                         The cost of the Planwill bw adjusted against the proprated amount of your currebt plan duration used.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-four">
+
+                <!-- faq question -->
+<h1 class="faq-page">How to change my password?</h1>
+
+                <!-- faq answer -->
+                <div class="faq-body">
+                    <p>
+                        You may change or cancel your subscription at any time in your Dashboard in the secton "My Plaln".
+                    </p>
+                </div>
+            </div>
+
+        </section>
+   
+
+    
+</body>
+</html>
+<script src="main.js">
+    document.querySelector("#one").addEventListener("click",emailPage)
+    function emailPage(){
+        window.location.href="subscriptionemail.html"
+    }
+    document.querySelector("#button").addEventListener("click",emailPages)
+    function emailPages(){
+        window.location.href="subscriptionemail1.html"
+    } document.querySelector("#two").addEventListener("click",emailPagee)
+    function emailPagee(){
+        window.location.href="subscriptionemail2.html"
+    }
+</script>
