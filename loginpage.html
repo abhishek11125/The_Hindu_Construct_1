@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoginPage</title>
+    <style>
+        #box{
+            width: 35%;
+            border: 1px solid rgb(205, 88, 211);
+            box-sizing: border-box;
+            margin: auto;
+            padding: 50px;
+            flex-wrap: wrap;
+        }
+        #box > div{
+            /* height: 30px; */
+            border: 1px solid transparent;
+            display: flex;
+            margin-top: 5px;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+           
+        }#box div img{
+            width: 10%;
+            height: 20%;
+        }input{
+            width: 100%;
+            height: 30px;
+            margin-bottom: 10px;
+        }button{
+            width: 110%;
+            height: 30px;
+            margin-bottom: 5px;
+            background-color: rgb(73, 64, 138);
+            border: none;
+            color: white;
+            border-radius: 3px;
+         
+        }
+        p{
+            text-align: center;
+        }p:last-child{
+            color:rgb(127, 127, 197);
+        } #box > div:hover{
+            border: .5px solid brown;
+
+        }
+        @media all and (min-width:320px) and (max-width:479px){
+            #box{
+                width: 100%;
+            }
+        }
+        @media all and (min-width:480px) and (max-width:720px){
+            #box{
+                width: 70%;
+            }
+        }
+    </style>
+    
+</head>
+<body>
+    <div id="box">
+        <div id="facebook">
+           <img src="https://cdn-icons-png.flaticon.com/128/5968/5968764.png" alt="fb">
+           <p>Continue with facebook</p>
+
+        </div  >
+        <div id="google" >
+            <img src="https://cdn-icons-png.flaticon.com/128/2702/2702602.png" >
+            <p>  Continue with Google  </p>
+        </div>
+        <div id="twitter" >
+            <img src="https://cdn-icons-png.flaticon.com/128/733/733579.png" >
+            <p>Continue with Twitter</p>
+        </div>
+        <div id="apple">
+            <img src="https://cdn-icons-png.flaticon.com/128/1532/1532495.png" >
+            <p>Continue with Apple</p>
+        </div>
+        <!-- <hr class="hr-text" data-content="OR"> -->
+        <p>OR</p>
+
+        <input type="text" id="email" placeholder="Enter Your Email Address">
+        <button id="next">NEXT</button>
+        <p>Don't have an account?</p>
+        <p id="sign">signUp ></p>
+    </div>
+   
+    
+</body>
+</html><script>
+     document.querySelector('#sign').addEventListener("click",goToSignup)
+    function goToSignup(){
+        window.location.href="signupPage.html";
+    }
+    document.querySelector("#facebook").addEventListener("click",facebook)
+    function facebook(){
+        window.location.href="fbredirect.html"
+    }
+    document.querySelector("#google").addEventListener("click",google)
+    function google(){
+        window.location.href="googleredirect.html"
+    }
+    document.querySelector("#twitter").addEventListener("click",twitter)
+    function twitter(){
+        window.location.href="twitterredirect.html"
+    }
+    document.querySelector("#apple").addEventListener("click",apple)
+    function apple(){
+        window.location.href="appleredirect.html"
+    }
+    
+   let userDetails=JSON.parse(localStorage.getItem("userInfo"));
+   document.querySelector("#next").addEventListener("click",perform)
+   function perform(){
+       let val=document.querySelector("#email").value;
+      if(check(val)===true){
+          alert("login successful")
+      } else{
+          alert("enter correct email address")
+      }
+   }
+   function check(email){
+       let filtered=userDetails.filter(function(elem){
+           return elem.email==email;
+       })
+       if(filtered.length>0){
+           return true;
+       }else{
+           return false;
+       }
+   }
+   
+</script>

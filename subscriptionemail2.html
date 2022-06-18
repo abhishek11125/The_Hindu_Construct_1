@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            width: 20%;
+            margin: auto;
+            border: 1px solid brown;
+            text-align: center;
+            padding: 20px;
+            margin-top: 15%;
+
+        }img{
+            width: 60%;
+            margin: auto;
+            display: block;
+        }button{
+            width: 100%;
+            margin-top: 6px;
+            padding: 5px;
+            box-sizing: border-box;
+            background-color: white;
+            border: 0.5px solid;
+           
+        }
+       #main>div{
+            margin: auto;
+            border: 1px solid transparent;
+            width: 90%;
+        }
+        div>input{
+            width: 100%;
+            padding: 5px;
+            box-sizing: border-box;
+        }button:hover{
+            background-color: rgb(37, 37, 67);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+         <img src="https://www.thehindu.com/static/content/images/20210222131602/assets/Logo.png" alt="">
+         <h3>Enter Your Email Id</h3>
+         <div>
+            <input type="email" placeholder="enter email here">
+            <button>NEXT</button>
+         </div>
+
+    </div>
+    
+</body>
+</html>
+<script>
+    document.querySelector("button").addEventListener("click",paymentpage)
+    function paymentpage(){
+        if (document.querySelector("input").value==""){
+            alert("enter your email address")
+        }else{
+            window.location.href="payment3.html"
+        }
+    }
+</script>

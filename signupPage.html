@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SigninPage</title>
+    <style>
+        #box{
+            width: 35%;
+            border: 1px solid rgb(205, 88, 211);
+            /* box-sizing: border-box; */
+            margin: auto;
+            padding: 40px;
+           /* flex-wrap: wrap; */
+           
+        }
+        #box>div{
+           
+            border: 1px solid transparent;
+            display: flex;
+            margin-top: 5px;
+            justify-content: space-around;
+            align-items: center;
+           
+        } 
+          #box div img{ 
+            width: 10%;
+           
+        }.inp{
+            width: 100%;
+            height: 30px;
+            margin-bottom: 10px;
+        }button{
+            width: 110%;
+            height: 30px;
+            margin-bottom: 5px;
+            background-color: rgb(73, 64, 138);
+            border: none;
+            color: white;
+            border-radius: 3px;
+         
+        }#box2{
+            border: 2px solid grey;
+            display: block;
+            margin-bottom: 15px;
+            padding: 5px;
+        }
+        p{
+            text-align: center;
+           
+        } #box > div:hover{
+            border: .5px solid brown;
+
+        }h2{ 
+            text-align: center;
+        }p:last-child{
+            color: rgb(93, 103, 142);
+        }form{
+            margin-bottom: 15px;
+        }
+        
+        @media all and (min-width:320px) and (max-width:479px){
+            #box{
+                width: 100%;
+            }
+        }
+        @media all and (min-width:480px) and (max-width:720px){
+            #box{
+                width: 70%;
+            }
+        }
+    </style>
+    
+</head>
+<body>
+    <div id="box">
+
+        <h2>SIGN UP</h2>
+
+        <div  id="facebook" class="main">
+           <img src="https://cdn-icons-png.flaticon.com/128/5968/5968764.png" alt="fb">
+           <p>Continue with facebook</p>
+
+        </div >
+        <div class="main" id="google">
+            <img src="https://cdn-icons-png.flaticon.com/128/2702/2702602.png" >
+            <p>  Continue with Google  </p>
+        </div>
+        <div id="twitter" class="main">
+            <img src="https://cdn-icons-png.flaticon.com/128/733/733579.png" >
+            <p>Continue with Twitter</p>
+        </div>
+        <div id="apple" class="main">
+            <img src="https://cdn-icons-png.flaticon.com/128/1532/1532495.png" >
+            <p>Continue with Apple</p>
+        </div>
+        
+        <p>OR</p>
+
+        <input class="inp" type="email" placeholder="Enter Your Email Address" id="email">
+        <input class="inp" type="password" placeholder="Password" id="pass">
+        <input class="inp" type="number" placeholder="Enter Your 10 digit mobile number" id="number">
+        
+           
+
+                     
+                        <form> 
+                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                        <label for="vehicle1"> I'd like to receive updates and offers from THG via message and email.</label><br>
+                        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                        <label for="vehicle2"> Connect me via whatsapp.</label><br>
+                       </form>
+                          
+                         <button>SIGNUP</button>
+        <p>By signing up, you agree to the Hindu's Terms of Use and Privacy Policy </p>
+        <p>Already have an account?</p>
+        
+         <p id="log">LOGIN ></p>
+       
+    </div>
+   
+    
+</body>
+</html>
+<script>
+    let userDetails=JSON.parse(localStorage.getItem("userInfo"))||[];
+    document.querySelector('#log').addEventListener("click",goToLogin)
+    function goToLogin(){
+        window.location.href="loginpage.html";
+    }
+   
+    document.querySelector("button").addEventListener("click",details)
+    function details(){
+        let obj={
+            email:document.querySelector("#email").value,
+            password:document.querySelector("#pass").value,
+            phone:document.querySelector("#number").value,
+
+        };
+        if(check(obj.email)===true){
+            userDetails.push(obj)
+            localStorage.setItem("userInfo",JSON.stringify(userDetails))
+        }else{
+            alert("email already exists")
+        }
+        
+    }
+    function check(mail){
+        let filters=userDetails.filter(function(elem){
+          return elem.email===mail;
+        })
+        if(filters.length>0){
+            return false;
+        }else{
+            return true;
+        }
+    } 
+
+    document.querySelector("#facebook").addEventListener("click",facebook)
+    function facebook(){
+        window.location.href="fbredirect1.html"
+    }
+    document.querySelector("#google").addEventListener("click",google)
+    function google(){
+        window.location.href="googleredirect1.html"
+    }
+    document.querySelector("#twitter").addEventListener("click",twitter)
+    function twitter(){
+        window.location.href="twitterredirect1.html"
+    }
+    document.querySelector("#apple").addEventListener("click",apple)
+    function apple(){
+        window.location.href="appleredirect1.html"
+    }
+</script>
