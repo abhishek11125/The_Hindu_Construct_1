@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pay securely with paytm</title>
+    <style>
+     #main{
+         width: 35%;
+         margin: auto;
+         border: 1px solid transparent;
+         padding: 10px;
+         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+         height: 500px;
+         overflow: scroll;
+     }#header>div{
+         display: flex;
+         justify-content: space-between;
+         flex-wrap: wrap;
+         
+     }#header>div>img{
+         width: 20%;
+     }#header>div:first-child >img:first-child{
+         
+         width: 10%;
+     }
+      #box1{
+         border: 0.1px solid transparent;
+         margin-top: 20px;
+         border-radius: 8px;
+         text-align: center;
+         padding: 5px;
+         flex-wrap: wrap;
+         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+     }#icons{
+         display: flex;
+         border: 1px solid transparent;
+         border-radius: 3px;
+        
+      }
+        #icons>div {
+         display: flex;
+         width: 23%;
+         margin: auto;
+         border: 1px solid transparent;
+         height: 100%;
+         justify-content: space-evenly;
+         align-items: center;
+         border-radius: 6px;
+         font-size: 10px;
+         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+         flex-wrap: wrap;
+         } 
+         #icons>div>img{
+          width: 30%;
+          height: 100%;
+        }#box2{
+         border: 1px solid transparent;
+         margin-top: 20px;
+         border-radius: 8px;
+         text-align: center;
+         padding: 5px;
+         flex-wrap: wrap;
+         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }#box2>div{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }#box2>div>img{
+            width: 10%;
+            
+        }#box3{
+            display: flex;
+            text-align: center;
+            justify-content: space-between;
+            align-items: center;
+        }#box3>img{
+            /* width: 20%; */
+            height: 10px;
+           
+            display: block;
+            
+        }
+        @media all and (min-width:320px) and (max-width:479px){
+            #main{
+                width: auto;
+            }
+        }
+        @media all and (min-width:480px) and (max-width:720px){
+            #main{
+                width: 60%;
+            }
+        }
+    </style>
+</head>
+<body>
+      <div id="main">
+       <div id="header">
+
+        <div>
+            <img  id="press" src="https://staticpg.paytm.in/pgp/v2/web/assets/back-arrow.png" alt="">
+            <img src="https://staticpg.paytm.in/pgp/v2/web/assets/paytm-pg-blue.svg" alt="">
+            <p></p>
+        </div>
+        <div>
+            <h3>The Hindu Group</h3>
+            <img src="https://merchant-static.paytm.com/merchant-dashboard/logo/Kastur90883456339710/org/logo" alt="">
+        </div>
+        <div class="pay">
+            <h3>Select an option to pay</h3>
+            <h3>₹ 2399</h3>
+        </div>
+
+       </div>
+       <div id="box1">
+           <p style="font-weight:bold">Scan QR using Paytm or any other UPI App</p>
+           <img  style="width: 40%;margin:auto;display:block;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAeAAAAHgAQAAAABVr4M4AAAEJ0lEQVR42u2dO3bbQAxF4eOCpZbApWhp1NK4FC6BpQodIRr8x3bSJE2Ep8Y0xUs3OPjNA0z8Fx8CDBgw4H8BH6Sf63HhxwfzzX5n3tdTrrbxzOdTLi53+/oCuBN8EXO5XQ9a+GkmN94yPvLotq9qUYO5f8r1AbgXPJ54wYMZF/QyrJc95Z3X53Vn/NgH/DRzBNwQDgsbF8PmaBU43NBwTAy4NTwANaxzmYOWOB3zUIB7whar+LSshSWPkddp+nI1NyR3fg50gN8bzqz3riHqzxe/S5kBvzEcnxGQJLUdFdEHp4WNWLU8BFl/V3wDfmt4GM0H6xf2xByrhhuSYknr5/EHtp0ugJvBVDLazU1tc0u6WdkshfQ9UxzAbWBNdkes8gYcmc1d1fi0ahILk27LU58B3Ak+7YvidATerJBWw0rvo207wK1gK4lHImtdWk1oPMWJrDeDVsl6AfeAPVmR1FaClrVUvP9CdkeClr0XcCtY3ZA216yBco8aScpmWlmZXasmy3UAt4H15HgEpHNRMxoXmvWe2dwfSc9m8NTGA9wE/t6ctUcXtzmVIFjfttbPgFvAFOmL+yO7kBTHjpA1jGVvtyiWAL8/bDmuBKQwrEfRMGmx9Olls5paJDSAO8AqL8j6WU4HvRDSQvr11WKuysMY4GYw5YGfK04o8mBr0ikspdFXHwa4ByxlT5iRHQVJc/bhb86DQyrtWsBd4MWfMDNaozdHFH1bb8RQypsAt4FNn5RZb9iTFUuzQFYdk1TUgNvAYTSThuBZNEzs8xh5Z5/kToDfHebo4FvW6z3ZtDDv8t+uRyY9gDvBVgiRHg9rlzbzGG/gev+FcowHcBs4e/oxfeF3yKPXap243f9A7fUC7gCHhuBuqgJKzf00q7NxHREE3AlWDUoOgobOgP3kOKZ3OAXWgFvBk9JRXMzcwY94Jl+RteQAt4JD8+pS6TPksOGYimBlqqsAt4A5JWu+d8Ck9rsPZricmn8QyALuAXsH/1xyJYHPesVyE/KEmKMlB7gT7Fsq1A1Z3zYnQsMflcAWs4OAO8A5x3VaKz/2JZkasojvQ7mSvV7ADWCrf1QqHU7HHp0ymxLG+ADcCY6znNWWIu25cM16cymwVngaMAXcADalmi5Te1IMgma1rPGshjEuwxyAW8DkAzmLZbTkAsdYV6FHQZsr3rYcJAbcAfZB0Ehfvjmd6n2ib8uAG8FlA04qpENhT3V89OYi2hutgDvBdZdWilGKhikWfZZ9W4CbwXVTsEoezyUHAl1w4KtwYhAdcCu4bAoug6AWokLN5hKEOdAB7gUfJqzfPX3ZKXSxYWHxzAVwX3j67wU8nxf6NtgitQfcBI5NwSVW+aLGWNgX6yoeX8UogBvAkfXqRLGvwontWvG6cgK0A24F479IAQYM+L+FfwHgOBSRFDlzNgAAAABJRU5ErkJggg==" alt="">
+
+           <div id="icons">
+
+               <div>
+                   <img src="https://staticpg.paytm.in/pgp/v2/web/assets/pp-icon.png" alt="">
+                   <p>postpaid</p>
+               </div>
+               <div>
+                <img src="https://staticpg.paytm.in/pgp/v2/web/assets/wallet-icon.png" alt="">
+                <p>Wallet</p>
+            </div>
+            <div>
+                <img src="https://staticpg.paytm.in/pgp/v2/web/assets/ptm-card-icon.png" alt="">
+                <p>Cards</p>
+            </div>
+            <div>
+                <img src="https://staticpg.paytm.in/pgp/v2/web/assets/upi-icon.png" alt="">
+                <p>UPI</p>
+            </div>
+               
+        </div>
+        <p>Pay using Paytm postpaid ,Paytm wallet ,saved Cards or Upi</p>
+
+       </div>
+       <div id="box2">
+           <h3>Other payment options</h3>
+           <div>
+               <p>EMI</p>
+               <img src="https://staticpg.paytm.in/pgp/v2/web/assets/emi-icon.png" alt="">
+               
+           </div>
+           <hr >
+           <div>
+            <p>EMI</p>
+            <img src="https://staticpg.paytm.in/pgp/v2/web/assets/ptm-card-icon.png" alt="">
+            
+        </div>
+        <hr>
+        <div>
+            <p>EMI</p>
+            <img src="https://staticpg.paytm.in/pgp/v2/web/assets/upi-icon.png" alt="">
+            
+        </div>
+        <hr>
+        <div>
+            <p>EMI</p>
+            <img src="https://staticpg.paytm.in/pgp/v2/web/assets/nb-icon.png" alt="">
+            
+        </div>
+        
+
+       </div>
+       <div id="box3">
+
+           <p>100% secured payments sponsered by</p>
+           <img src="https://staticpg.paytm.in/pgp/v2/web/assets/pg-logo-blue.png" alt="">
+
+       </div>
+
+      </div>
+</body>
+</html>
+<script>
+    document.querySelector("#press").addEventListener("click",pressed)
+    function pressed(){
+        window.location.href="subscribe.html"
+    }
+</script>

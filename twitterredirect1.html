@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            width: 30%;
+            margin: auto;
+            border: 1px solid green;
+            margin-top: 17%;
+            padding: 20px;
+            color: blueviolet;
+           
+        }
+        button{
+            margin: auto;
+            display: block;
+            background-color:rgb(16, 19, 69);
+            border: none;
+            color: aliceblue;
+            padding: 5px;
+        }#box>div{
+            height: 20px;
+        }img{
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div> 
+            <img src="https://cdn-icons-png.flaticon.com/128/733/733579.png" alt="error">
+        </div>
+      <h3>We are working on this feature Please Continue with Email</h3>
+      <button>Go back</button>
+    </div>
+    
+</body>
+</html>
+<script>
+    document.querySelector("button").addEventListener("click",back)
+    function back(){
+        window.location.href="signupPage.html";
+    }
+</script>
