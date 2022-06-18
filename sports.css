@@ -221,7 +221,6 @@
 #sidetags{
   width: 20%;
   height: 60px;
-  border: 1px solid green;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUAQMAAAC3R49OAAAABlBMVEUeQwAlUQAezhCjAAAAIElEQVQImWP4vvcBQ/W9Dwx73xcw3Pu+geF99QUGCsQAXCku4YzGKp8AAAAASUVORK5CYII=);  
@@ -242,6 +241,9 @@
   font-size: 12px;
   text-decoration: none;
   
+}
+#tags>div:first-child>ul>li>a:hover{
+  text-decoration: underline;
 }
 #tags>div:first-child>ul>li:first-child::after{
   content: "";
@@ -353,7 +355,7 @@ font-size: 15px;
   margin: 0px 8px;
 }
 #newstag {
-  margin-top: -250px;
+  margin-top: -200px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(auto);
@@ -366,18 +368,21 @@ font-size: 15px;
   display: flex;
   flex-direction: row;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin-top: 10px;
 }
 #newstag > div > div > p:first-child {
   font-size: 12px;
   color: #326e00;
   font-family: sans-serif;
   font-weight: 600;
+  margin-left: 5px;
 }
 #newstag > div > div > p:last-child {
   margin-top: 8px;
   font-size: 16px;
   font-family: sans-serif;
   line-height: 20px;
+  margin-left: 5px
 }
 #newstag > div > div > p:last-child:hover {
   text-decoration: underline;
