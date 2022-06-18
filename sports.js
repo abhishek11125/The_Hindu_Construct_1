@@ -33,7 +33,6 @@ let sports=[
 ]
 
 
-
 sports.forEach(function(elem) {
     let box=document.createElement("div")
     let pic = document.createElement("img")
@@ -93,3 +92,68 @@ section_div.forEach(function(elem){
     
 });
 
+let article = [
+    {
+        comment:"Dominant Mumbai on the verge of final",
+        discp:"Shaw’s men dismiss UP for 180, take overall lead to 346 with nine wickets in hand"
+    },
+    {
+        comment:"‘My job is to stay one step ahead of the batters’",
+        discp:"Focus is skill development, says Harshal"
+    },
+    {
+        comment:"Confident India will look to force the series into the decider",
+        discp:"Arshdeep or Umran may get a look-in; de Kock’s fitness still in the balance, but South..."
+    },
+    {
+        comment:"India meets Pakistan in under-12 final",
+        discp:"NEW DELHI"
+    },
+    {
+        comment:"Neeraj headlines 37-member CWG squad",
+        discp:"Long jumper Jeswin, marathoner Srinu and high jumper Tejaswin miss out"
+    },
+    {
+        comment:"Vatsal Manikantan, Jaya Kapoor make two finals",
+        discp:"CHANDIGARH"
+    },
+    {
+        comment:"Meghana and Shahu take mixed air rifle crown",
+        discp:"NEW DELHI"
+    },
+    {
+        comment:"Ravishing Form, Siege Perilous, Triple Wish, Dedicated Boy, Del Mar and Imperial Power please",
+        discp:"BENGALURU: Ravishing Form, Siege Perilous, Triple Wish,"
+    },
+    {
+        comment:"Easy like Sunday morning",
+        discp:"Baseball is the only field of endeavour where a man can succeed three times out of ten.."
+    },
+    {
+        comment:"Badminton | Sameer, Ashwini-Sikki lose in Indonesia Open",
+        discp:"Sameer Verma, a former world no. 11, went down 10-21 13-21 to sixth seeded Lee Zii Jia of.."
+    },
+    {
+        comment:"NBA | As player or coach, Warriors boss Steve Kerr is champion material",
+        discp:"The Golden State Warriors lead the NBA Finals series 3-2 against the Boston Celtics and.."
+    },
+    {
+        comment:"Premier League announces 2022-23 season fixtures",
+        discp:"In the Premier League opening week, Manchester City travel to West Ham, Liverpool play newly-promoted Fulham,"
+    }
+]
+
+article.forEach(function(elem){
+
+    cont1 = document.createElement("div")
+
+    head1 = document.createElement("p")
+    head1.innerText = elem.comment;
+
+    news1 = document.createElement("p")
+    news1.innerText = elem.discp;
+
+    cont1.append(head1,news1);
+    document.querySelector("#otherarticle").append(cont1);
+
+})
