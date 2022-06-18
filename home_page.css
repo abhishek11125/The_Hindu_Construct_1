@@ -91,6 +91,7 @@
 /* navbar 2 below Logo */
 #nav2 {
   position: sticky;
+  top:0;
   height: 40px;
   width: 100%;
   display: flex;
@@ -99,6 +100,7 @@
   color: gray;
 }
 #left {
+  position:sticky;
   width: 580px;
   display: flex;
   justify-content: space-between;
@@ -425,7 +427,8 @@
   margin-top: -276px;
   margin-left: 305px;
   padding: 2px 5px;
-  background-color: lightgray;
+  color: transparent;
+  background-color:transparent;
 }
 #con7 > div:hover {
   color: white;
@@ -440,7 +443,8 @@
   margin-top: -276px;
   margin-left: 305px;
   padding: 2px 5px;
-  background-color: lightgray;
+  color: transparent;
+  background-color:transparent;
 }
 #con8 > div:hover {
   color: white;
@@ -587,7 +591,8 @@ p {
   margin-top: -93px;
   margin-left: 800px;
   padding: 2px 5px;
-  background-color: lightgray;
+  color: transparent;
+  background-color:transparent;
 }
 #ad3 > div:hover {
   color: white;
@@ -682,7 +687,8 @@ p {
   position: absolute;
   margin-top: -703px;
   margin-left: 190px;
-  background-color: rgb(211, 211, 211);
+  color: transparent;
+  background-color:transparent;
   padding: 4px 10px;
 }
 #box43 > div:hover {
@@ -731,7 +737,7 @@ html {
 #bottom{
   height:150px;
   width:100%;
-  background-color: white;
+  background-color: #eaeaea;
   margin-bottom: 40px;
   display: flex;
   justify-content: space-between;
@@ -750,7 +756,7 @@ html {
   font-size: 18px;
   line-height: 28px;
   width:285px;
-  background-color: #ffc000;
+  background-color: white;
   padding:10px;
   padding-top: 20px;
 }
